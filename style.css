@@ -2,15 +2,6 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-html,body{
-    height: 100%;
-    width: 100%;
-}
-.main{
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
 .navbar{
     height: 100px;
     width: 100%;
@@ -22,8 +13,10 @@ html,body{
     padding: 0 4vw;
 }
 .logo{
-    width: 20%;
-    height: 10px;
+    font-size: 2rem;
+}
+.logo span{
+    color: rgb(245, 84, 86);
 }
 .nav-part2{
     display: flex;
@@ -41,21 +34,70 @@ html,body{
     text-align: center;
     display: none;
    
-
 }
 .navbar button{
     font-size: 1vw;
     padding: 0.7vw 1.4vw;
-    background-color:#ff735c;
+    background-color:rgb(245, 84, 86);
     color: rgb(249, 248, 248);
     border: none;
     border-radius: 5px;
     font-weight:600;    
 }
-
-@media (max-width:800px) {
+/*Profile section*/
+.container {
+    top: 0;
+    background: white;
+    min-height: 50vh;
+    text-align: left;
+    position: relative;
+    display: flex;
+  }
+  h1
+   {
+      font-size: 3rem;
+  }
+  .left{
+    width: 55%;
+    height: 100%;
+    padding: 5vw 4vw;
+  }
+  .left h1 span {
+    color: rgb(245, 84, 86);
+    font-size: 2.5rem;
+  }
+  .left p{
+    font-size: 1.2vw;
+    color: rgb(67, 64, 64);
+    margin-bottom: 1vw;
+    line-height: 1.7;
+  }
+  .container button{
+    font-size: 1vw;
+    padding: 10px 16px 10px 16px;
+    background-color:rgb(245, 84, 86);
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    margin-left: 10%;
+  }
+  .container button a{
+    text-decoration: none;
+    color: white;
+  }
+  .right{
+    display: flex;
+    float:right ;
+    width: 45%;
+    height: 100%; 
+  }
+  .right img{
+    width: 100%;
+    height: 100%; 
+  }
+  @media (max-width:800px) {
     .logo{
-        display: none;
+        font-size: 1.5rem;
     }
     .navbar{
         padding: 0 6vw;
@@ -107,48 +149,3 @@ html,body{
     }
     
 }
-.container{
-    height:calc(100% - 100px) ;
-    width:100% ;
-    position: relative;
-    display: flex;
-}
-.left{
-    width: 55%;
-    height: 100%;
-    padding: 5vw 4vw;
-}
-.left h1 {
-    font-size: 4.2vw;
-    line-height: 4.4vw;
-}
-.left h1 span {
-    color: #ff735c;
-}
-.left p{
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #666;
-    width: 80%;
-    margin-top: 1.5vw;
-    margin-bottom: 4vw;
-}
- .container button{
-    font-size: 1.5vw;
-    padding: 1.1vw 2.1vw;
-    background-color:#ff735c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-weight:700; 
-    margin-left: 20%;
-}
-.right{
-    width: 45%;
-    height: 100%; 
-}
-.right img{
-    width: 100%;
-    height: 100%; 
-}
-
